@@ -26,8 +26,8 @@ jobs:
         run: sfdx version
 
       # Save into private-key
-      - name: Save into private-key
-        run: echo -n ${{ secrets.PRIVATE_KEY_BASE64ED }} | base64 -d > ./temp/server.key
+      # - name: Save into private-key
+      #   run: echo -n ${{ secrets.PRIVATE_KEY_BASE64ED }} | base64 -d > ./temp/server.key
 
       # Authenticate to access the salesforce
       - name: Authenticate to access the salesforce
