@@ -31,4 +31,4 @@ jobs:
 
       # Authenticate to access the salesforce
       - name: Authenticate to access the salesforce
-        run: sfdx force:auth:jwt:grant --instanceurl=https://pluck3-dev-ed.develop.my.salesforce.com/ --jwtkeyfile ./temp/server.key --username ${{ secrets.ORG_USER }} --clientid ${{ secrets.CLIENT_ID }}
+        run: sfdx force:auth:jwt:grant --instanceurl=https://login.salesforce.com/ --jwtkeyfile ./temp/server.key --username ${{ secrets.ORG_USER }} --clientid ${{ secrets.CLIENT_ID }}
